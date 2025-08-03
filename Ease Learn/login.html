@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=""width=device-width, initial scale="1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+     <div class="heading">
+      <h1>Ease Learn</h1> 
+     </div>
+
+  <div class="wrapper">
+    <form>
+      <h1>Login</h1>
+      <div class="input-box">
+        <label><input type="text" id="username" name="username" placeholder="Username" required>
+         <i class="fa-solid fa-user"></i></label>
+        </div>
+        <div class="input-box">
+       <label><input type="password" id="password" type="password" placeholder="Password" pattern=".{8,}{a-zA-Z0-9}" required>
+         <i class="fa-solid fa-lock"></i></label>
+      </div>
+      <div class="remember-forget">
+        <label><input type="checkbox">Remember me</label>
+        <a href="#">Forgot password</a>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <div class="register-link">
+        <p>Don't have an account ? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
