@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heading">
+      <h1>Ease Learn</h1> 
+     </div>
+  <div class="container">
+    <form class="registration-form">
+      <h1>Sign Up</h1>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" pattern=".{8,}{a-zA-Z0-9}" required />
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" pattern=".{8,}{a-zA-Z0-9}" required />
+      </div>
+      <button type="submit">Register</button>
+
+       <p class="login-link">Already a user? <a href="login.html">Log in</a></p>
+    </form>
+  </div>
+</body>
+</html>
