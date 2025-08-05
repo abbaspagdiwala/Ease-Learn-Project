@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kodnest Login Page</title>
+    <link rel="stylesheet" href="kodnest-login-styles.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <img src="kodnest-logo.png" alt="Kodnest Logo" class="logo" />
+      </div>
+    <div class="container">
+      <div class="login-box-image">
+        <img src="Banner.png" alt="Banner" />
+      </div>
+      <div class="login-box-input">
+        
+        <h3>Welcome Back, Kodnestians!</h4>
+        <p>Let's hustle and make your dreams come true!</p>
+        <label for="email-address">Email Address</label>
+        <form>
+        <div class="input-group">
+          <input type="email" id="email-address" name="email-address"  placeholder="your-email@gmail.com" pattern="[A-Za-z0-9/.]{2,}+[@]{1}+[a-z]{4,}+[A-Za-z/.]{2,}" required />
+        </div>
+        <label for="password">Password</label>
+        <div class="input-group">
+          <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" placeholder="Please enter your password" required />
+          <div class="forgot-password">
+          <a href="kodnest-Login.html">Forgot your password?</a>
+    </div>
+        </div>
+        
+    <button type="submit" class="login-button">Log In</button>
+    </form>
+      </div>
+      </div>
+  </body>
+</html>
