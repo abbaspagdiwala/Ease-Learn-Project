@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="result-styles.css">
+</head>
+<body>
+
+  <div class="result-container">
+    <h1>Quiz Result</h1>
+    <p id="score-text"></p>
+    <p id="message"></p>
+
+    <div class="result-buttons">
+      <button onclick="location.href='./index.html'">Home</button>
+    </div>
+  </div>
+
+  <script>
+
+    const score = localStorage.getItem("quizScore");
+    const total = localStorage.getItem("totalQuestions");
+
+    document.getElementById("score-text").textContent = `Your Score: ${score} / ${total}`;
+
+
+    const passMark = Math.ceil(total * 0.6); 
+    const messageEl = document.getElementById("message");
+    if (score >= passMark) {
+      messageEl.textContent = "🎉 Congratulations! You passed!";
+      messageEl.style.color = "green";
+      messageEl.style.fontWeight = "700";
+      messageEl.style.fontSize = "1.2em";
+    } else {
+      messageEl.textContent = "❌ Better luck next time!";
+      messageEl.style.color = "red";
+      messageEl.style.fontWeight = "700";
+      messageEl.style.fontSize = "1.2em";
+    } 
+    
+    const timeTaken = localStorage.getItem("timeTaken");
+if (timeTaken) {
+  const minutes = Math.floor(timeTaken / 60);
+  const seconds = timeTaken % 60;
+  const timeText = document.createElement("p");
+  timeText.textContent = `Time Taken: ${minutes} min ${seconds} sec`;
+  timeText.style.fontSize = "1.1em";
+  timeText.style.fontWeight = "bold";
+  timeText.style.marginTop = "10px";
+
+  const buttonContainer = document.querySelector(".result-buttons");
+  buttonContainer.parentNode.insertBefore(timeText, buttonContainer);
+}
+
+
+  </script>
+
+</body>
+</html>

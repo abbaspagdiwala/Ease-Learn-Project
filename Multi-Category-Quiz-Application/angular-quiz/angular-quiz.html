@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Quiz</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+  </head>
+  <body>
+
+<header class="quiz-header">
+  <h1>Angular Quiz</h1>
+  <div id="timer" class="timer">5:00</div>
+</header>
+
+<main class="quiz-layout">
+
+  <button id="toggle-sidebar" class="toggle-btn">☰</button>
+   <button class="home-btn" onclick="location.href='../index.html'">Home</button>
+
+  <aside class="quiz-sidebar" id="quiz-sidebar">
+    <div id="index-buttons"></div>
+  </aside>
+
+
+  <section class="quiz-main">
+    <div id="question-text"></div>
+    <div id="options-container"></div>
+    <div id="feedback"></div>
+
+    <div class="quiz-navigation">
+      <button id="prev-btn">Previous</button>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div id="score-display">Score: 0</div>
+
+    <div class="quiz-submit">
+      <button id="submit-btn" disabled>Submit</button>
+    </div>
+  </section>
+</main>
+    <script src="quiz.js"></script>
+  </body>
+  </html>
