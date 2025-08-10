@@ -4,7 +4,7 @@
 }
 
 header{
-  position: relative; /* Important for absolute children */
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,9 +32,9 @@ header .heading h1{
 }
 
 .home-btn {
-  position: absolute;  /* or fixed if you want it to stay in place while scrolling */
-  right: 20px;          /* distance from the right edge */
-  top: 20px;            /* distance from the top edge */
+  position: absolute;  
+  right: 20px;         
+  top: 20px;            
   padding: 8px 12px;
   background-color: #fff;
   color: #044a42;
@@ -262,3 +262,4 @@ body{
     display: block;
   }
 }
+
